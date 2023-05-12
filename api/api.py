@@ -20,6 +20,8 @@ display = auto()
 app = Flask(__name__)
 
 
+@app.route('/')
+
 @app.route('/api/inky/initialise')
 def hello():
     if (display):
